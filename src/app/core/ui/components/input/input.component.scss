@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+:host {
+  .label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+
+    .value {
+      color: $dark-slate-grey;
+    }
+
+    .error {
+      color: $tomato;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: solid 1px $grey;
+    padding: 20px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    &:focus {
+      outline: none;
+      border-color: black;
+    }
+  }
+
+  &.ng-invalid.ng-touched {
+    input {
+      background-color: $very-pale-tint;
+      border: solid 1px $tomato;
+      color: $tomato;
+
+      &::placeholder {
+        color: $medium-carmine;
+      }
+    }
+  }
+}
+
+

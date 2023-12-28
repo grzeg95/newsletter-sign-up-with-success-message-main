@@ -1,27 +1,59 @@
-# NewsletterSignUpWithSuccessMessageMain
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Code scaffolding
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- Add their email and submit the form
+- See a success message with their email after successfully submitting the form
+- See form validation messages if:
+  - The field is left empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshot
 
-## Running end-to-end tests
+![](./screenshot.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Links
 
-## Further help
+- Solution URL: [https://github.com/grzeg95/newsletter-sign-up-with-success-message-main](https://github.com/grzeg95/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [https://newsl-sign-up-with-suc-mes.web.app](https://newsl-sign-up-with-suc-mes.web.app)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## My process
+
+### Built with
+
+- Angular 17
+- Firebase Hosting (and GitHub Actions!)
+
+### Continued development
+
+- Create unit tests
+
+### Useful resources
+
+- [Getting started with Firebase Hosting (and GitHub Actions!)](https://www.youtube.com/watch?v=P0x0LmiknJc)
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)

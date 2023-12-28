@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/newsletter-sign-up-with-success-message-main/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

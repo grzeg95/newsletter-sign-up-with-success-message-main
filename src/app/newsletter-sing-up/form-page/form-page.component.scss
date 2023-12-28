@@ -1,0 +1,86 @@
+@import '../../core/ui/styles/variables';
+@import '../../core/ui/styles/mixins';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  height: 100%;
+
+  .image {
+    background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 284px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    @include from-tablet {
+      height: auto;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    }
+  }
+
+  .product {
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 64px 32px;
+
+    .title {
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: $dark-slate-grey;
+
+      @include from-tablet {
+        font-size: 3.5rem;
+      }
+    }
+
+    .list {
+
+      color: $dark-slate-grey;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: flex;
+          gap: 16px;
+          margin-bottom: 16px;
+          line-height: 1.5rem;
+        }
+        li::before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          background: url(/assets/images/icon-success.svg) no-repeat;
+          background-size: cover;
+          flex: 0 0 20px;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    @include from-tablet {
+      justify-content: center;
+    }
+  }
+
+  @include from-tablet {
+    flex-direction: row-reverse;
+    padding: 24px;
+    border-radius: 32px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 928px;
+    height: auto;
+  }
+}

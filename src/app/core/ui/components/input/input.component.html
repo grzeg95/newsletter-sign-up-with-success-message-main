@@ -1,0 +1,13 @@
+<div class="label" [class.disabled]="isDisabled">
+  <div class="value">{{this.label}}</div>
+  <div class="error"><ng-content/></div>
+</div>
+<input
+  #input
+  [class.disabled]="isDisabled"
+  [value]="value"
+  (input)="handleOnInput($event)"
+  type="text"
+  [placeholder]="this.placeholder"
+  (blur)="onTouched()"
+>
